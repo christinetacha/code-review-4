@@ -1,0 +1,78 @@
+/* wireframe*/
+
+*:not(body):not(html) {
+  box-sizing: border-box;
+  /*border: 1px dashed white;*/
+}
+
+/* end wirefram */
+
+.flex-container {
+  position: relative;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #333333;
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul li {
+  width: 100%;
+  align-items: flex-end;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+#mid li  {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.gallery img {
+  width: 33%;
+  height: 350px;
+  background-color: mistyrose;
+}
+
+.button {
+  position: absolute;
+  left: 46%;
+  top: 40%;
+  width: 150px;
+  height: 50px;
+  background-color: goldenrod;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button:hover {
+  transition-property: all;
+  transition-delay: 250ms;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 500px;) {
+  .gallery {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
